@@ -10,6 +10,6 @@ powershell -Command "Invoke-WebRequest https://upload.wikimedia.org/wikipedia/de
 
 reg add "HKCU\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "%cd%\wallpaper.png" /f
 
-reg add "HKCU\Control Panel\Desktop" /v WallpaperStyle /t REG_SZ /d 0 /f
+reg add "HKCU\Control Panel\Desktop" /v WallpaperStyle /t REG_SZ /d 1 /f
 
-
+%SystemRoot%\System32\RUNDLL32.EXE user32.dll, UpdatePerUserSystemParameters
